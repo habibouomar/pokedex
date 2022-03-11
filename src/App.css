@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@font-face{
+    font-family: pokemonSolid;
+    src: url("../src/components/fonts/Pokemon\ Solid.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+    font-family: pokemonClassic;
+    src: url("../src/components/fonts/Pokemon\ Classic.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+    color:#ffee00;
+    text-align: center;
+    font-family: "pokemonSolid";
+    margin: 40px auto;
+    font-size: 85px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body
+{
+   background: url(./components/css/bg.png) center fixed;
+   background-size: cover;
+   height: 100vh;
+   width: 100vw; 
+   position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.cardPokemon{
+
+    background-image: url(./components/css/card.png);
+    background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+	width: 262px;
+	height: 346px;
+}
+
+.principal_card{
+
+    background-image: url(./components/css/pp.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+
+h5{
+    font-family: "pokemonClassic";
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
 }
