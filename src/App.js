@@ -25,7 +25,7 @@ export default class App extends React.Component {
       this.setState({
         img: resultat.data.sprites.other.dream_world.front_default,
         name: resultat.data.name,
-        height:Math.round(resultat.data.height * 100.0 / 10) / 100,
+        height: Math.round(resultat.data.height * 100.0 / 10) / 100,
         weight: Math.round(resultat.data.weight * 100.0 / 10) / 100,
         types: resultat.data.types[0].type.name
       });
@@ -41,7 +41,7 @@ export default class App extends React.Component {
       this.setState({
         img: resultat.data.sprites.other.dream_world.front_default,
         name: resultat.data.name,
-        height:Math.round(resultat.data.height * 100.0 / 10) / 100,
+        height: Math.round(resultat.data.height * 100.0 / 10) / 100,
         weight: Math.round(resultat.data.weight * 100.0 / 10) / 100,
         types: resultat.data.types[0].type.name
       });
@@ -72,7 +72,7 @@ export default class App extends React.Component {
         </div>
 
         <a href="#top"><Pokedex get={this.getPoke}></Pokedex></a>
-        
+
       </>
     )
   }
